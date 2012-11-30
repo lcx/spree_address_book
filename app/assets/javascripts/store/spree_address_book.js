@@ -37,6 +37,15 @@
         }
       });
     }
+    else {
+      $('input#order_use_billing').click(function() {
+        if ($(this).is(':checked')) {
+          $('#shipping .inner').hide();
+        } else {
+          $('#shipping .inner').show();
+        }
+      });      
+    }
   });
   
   function hide_address_form(address_type){
